@@ -1,284 +1,110 @@
+from pathlib import Path
 
-<!DOCTYPE html>
+content = """<!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Urban Routes Testing | Camilo Acero</title>
-
 <link rel="stylesheet" href="styles.css">
-
 </head>
-
 <body>
-
 <header>
-
-<img src="assets/Camilo Acero_QA_Banner.jpeg"
-     class="banner"
-     alt="Banner QA">
-
+<img src="assets/Camilo Acero_QA_Banner.jpeg" class="banner" alt="Banner QA">
 </header>
 
-<section>
-
+<section class="hero">
 <h1>Urban Routes Testing</h1>
-
-<h2>Proyecto QA Funcional</h2>
-
-<p>
-Proyecto desarrollado durante el programa QA Engineer de TripleTen, enfocado en la validación funcional de una aplicación de transporte urbano.
-</p>
-
+<h2>Proyecto QA Funcional | TripleTen</h2>
+<p>Proyecto desarrollado durante el programa QA Engineer de TripleTen, enfocado en la validación funcional de Urban Routes mediante diseño de casos de prueba, pruebas manuales, documentación de incidencias y uso de Chrome DevTools.</p>
 </section>
 
 <section>
-
-<h2>Descripción del Proyecto</h2>
-
-<p>
-Urban Routes es una plataforma de movilidad que permite a los usuarios solicitar servicios de transporte mediante una aplicación web.
-</p>
-
-<p>
-El objetivo fue validar los principales flujos de usuario para garantizar que el sistema cumpliera los requisitos funcionales establecidos.
-</p>
-
+<h2>Descripción</h2>
+<p>Urban Routes es una aplicación web para la reserva de vehículos. Durante este proyecto validé los principales flujos de negocio, el formulario de métodos de pago, la lógica del botón Reservar y el comportamiento general de la interfaz.</p>
 </section>
 
 <section>
-
-<h2>Objetivos de Testing</h2>
-
+<h2>Objetivos</h2>
 <div class="card">
-
 <ul>
-
-<li>Validar registro de usuarios.</li>
-
-<li>Verificar inicio de sesión.</li>
-
-<li>Comprobar solicitud de rutas.</li>
-
-<li>Validar cálculo de tarifas.</li>
-
-<li>Detectar errores funcionales.</li>
-
-<li>Documentar incidencias encontradas.</li>
-
+<li>Validar el flujo de reserva.</li>
+<li>Verificar el formulario Agregar Tarjeta.</li>
+<li>Comprobar la lógica del botón Reservar.</li>
+<li>Ejecutar pruebas UI y funcionales.</li>
+<li>Documentar defectos en Jira.</li>
+<li>Analizar tráfico con Chrome DevTools.</li>
 </ul>
-
 </div>
-
 </section>
 
 <section>
-
-<h2>Metodologías Aplicadas</h2>
-
-<div class="card">
-
-<ul>
-
-<li>Clases de Equivalencia</li>
-
-<li>Valores Límite</li>
-
-<li>Pruebas Positivas y Negativas</li>
-
-<li>Diseño de Casos de Prueba</li>
-
-<li>Reporte de Bugs</li>
-
-<li>Pruebas Funcionales Manuales</li>
-
-</ul>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Herramientas Utilizadas</h2>
-
+<h2>Herramientas</h2>
 <div class="skills">
-
-<span>Jira</span>
-
-<span>Google Sheets</span>
-
-<span>Chrome DevTools</span>
-
-<span>Postman</span>
-
-<span>Manual Testing</span>
-
-<span>Bug Reporting</span>
-
+<span>Jira</span><span>Chrome DevTools</span><span>Google Sheets</span><span>Manual Testing</span><span>Functional Testing</span><span>UI Testing</span><span>Bug Reporting</span>
 </div>
-
 </section>
 
 <section>
-
-<h2>Casos de Prueba Destacados</h2>
-
-<div class="card">
-
-<h3>CP-001 Registro Exitoso</h3>
-
-<p>
-Validar que un usuario pueda registrarse utilizando datos válidos.
-</p>
-
-<p>
-Resultado esperado: El sistema crea la cuenta correctamente.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>CP-002 Correo Inválido</h3>
-
-<p>
-Validar comportamiento cuando el usuario introduce un correo incorrecto.
-</p>
-
-<p>
-Resultado esperado: El sistema muestra mensaje de validación.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>CP-003 Solicitud de Ruta</h3>
-
-<p>
-Verificar que el usuario pueda solicitar una ruta entre dos ubicaciones válidas.
-</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Bugs Encontrados</h2>
-
-<div class="card">
-
-<h3>BUG-001</h3>
-
-<p>
-El sistema aceptaba correos electrónicos sin dominio válido.
-</p>
-
-<p>
-Severidad: Media
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>BUG-002</h3>
-
-<p>
-La aplicación permitía ingresar caracteres especiales en el campo teléfono.
-</p>
-
-<p>
-Severidad: Baja
-</p>
-
-</div>
-
-</section>
-
-<section>
-
 <h2>Evidencias</h2>
 
 <div class="card">
-
-<h3>Captura 1 - Casos de Prueba</h3>
-
-<img src="images/urbanroutes/testcases.png"
-     alt="Casos de prueba"
-     style="width:100%; border-radius:10px;">
-
-<p>
-Espacio reservado para captura de los casos de prueba.
-</p>
-
+<h3>Pruebas de Diseño</h3>
+<img src="assets/imgs_urbanroutes/1. Pruebas de Diseño.png" style="width:100%;border-radius:10px;">
 </div>
 
 <div class="card">
-
-<h3>Captura 2 - Reporte de Bugs</h3>
-
-<img src="images/urbanroutes/bugs.png"
-     alt="Reporte de bugs"
-     style="width:100%; border-radius:10px;">
-
-<p>
-Espacio reservado para captura del reporte de incidencias.
-</p>
-
+<h3>Urban Routes</h3>
+<img src="assets/imgs_urbanroutes/1a. urbanroutes.jpg" style="width:100%;border-radius:10px;">
 </div>
 
 <div class="card">
+<h3>Método de Pago</h3>
+<img src="assets/imgs_urbanroutes/2. Pruebas de las Ventanas Metodo de Pago y agregar targeta.png" style="width:100%;border-radius:10px;">
+</div>
 
-<h3>Captura 3 - Evidencia de Ejecución</h3>
+<div class="card">
+<h3>Chrome DevTools</h3>
+<img src="assets/imgs_urbanroutes/2a. urbanroutes.png" style="width:100%;border-radius:10px;">
+</div>
 
-<img src="images/urbanroutes/execution.png"
-     alt="Ejecución de pruebas"
-     style="width:100%; border-radius:10px;">
+<div class="card">
+<h3>Botón Reservar</h3>
+<img src="assets/imgs_urbanroutes/3. Prueba Boton Reservar.png" style="width:100%;border-radius:10px;">
+</div>
 
-<p>
-Espacio reservado para evidencia de ejecución.
-</p>
-
+<div class="card">
+<h3>Funciones de Reserva</h3>
+<img src="assets/imgs_urbanroutes/4. Funciones de Reservar.png" style="width:100%;border-radius:10px;">
 </div>
 
 </section>
 
 <section>
-
-<h2>Resultados y Aprendizajes</h2>
-
-<p>
-Este proyecto permitió fortalecer habilidades de análisis funcional, diseño de pruebas, identificación de defectos y documentación de incidencias.
-</p>
-
-<p>
-También reforzó el uso de metodologías de aseguramiento de calidad y buenas prácticas de testing utilizadas en entornos profesionales.
-</p>
-
+<h2>Defectos Encontrados</h2>
+<div class="card"><h3>TT-1</h3><p>La ventana "Automóvil reservado" no se mostraba correctamente.</p></div>
+<div class="card"><h3>TT-3</h3><p>Problemas durante la cancelación del viaje.</p></div>
+<div class="card"><h3>TT-4</h3><p>El sistema permitía continuar sin seleccionar tarjeta.</p></div>
+<div class="card"><h3>TT-5</h3><p>Validaciones incompletas del formulario Agregar Tarjeta.</p></div>
+<div class="card"><h3>TT-6</h3><p>El campo CVV aceptaba datos inválidos.</p></div>
 </section>
 
-<section style="text-align:center;">
+<section>
+<h2>Resultados</h2>
+<p>Este proyecto fortaleció mis habilidades en análisis funcional, diseño de casos de prueba, documentación de bugs, validación de interfaces y uso de herramientas empleadas por equipos profesionales de Quality Assurance.</p>
+</section>
 
-<a class="btn" href="index.html">
-← Volver al Portafolio
-</a>
-
+<section style="text-align:center">
+<a class="btn" href="index.html">← Volver al Portafolio</a>
 </section>
 
 <footer>
-
-<p>
-© 2026 Camilo Acero | QA Engineer Junior
-</p>
-
+<p>© 2026 Camilo Acero | QA Engineer Junior</p>
 </footer>
-
 </body>
-
 </html>
+"""
+
+out=Path("/mnt/data/project_urbanroutes.html")
+out.write_text(content,encoding="utf-8")
+print(out)
